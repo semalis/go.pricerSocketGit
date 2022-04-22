@@ -58,6 +58,7 @@ func ExpressionExecutor(price *PriceTerminal) {
 		}
 	}
 
+
 	App.LockerPrices.Unlock()
 	App.LockerMath.Unlock()
 }

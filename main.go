@@ -49,6 +49,7 @@ func (w *Worker) Run() {
 	}
 }
 
+
 var App *Application
 
 func main() {
@@ -62,6 +63,7 @@ func main() {
 	server.OnClose(onClose)
 	server.OnConnect(onConnect)
 	server.OnMessage(onMessage)
+
 
 	r := mux.NewRouter()
 
@@ -93,6 +95,7 @@ func main() {
 	container.CheckTimer(5 * time.Second)
 
 	/**/
+
 
 	// Запускаем бесконечный таймер чтоб приложение жило вечно
 	container.Infinity()

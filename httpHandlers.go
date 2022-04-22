@@ -84,6 +84,7 @@ func showProvider(w http.ResponseWriter, req *http.Request) {
 
 	out := make(map[string]map[string]*PriceTerminal)
 
+
 	App.LockerPrices.RLock()
 
 	for _, v := range strings.Split(vars["code"], ",") {
