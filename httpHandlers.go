@@ -79,6 +79,7 @@ func showProvider(w http.ResponseWriter, req *http.Request) {
 		time_ = 0
 	}
 
+
 	provider := vars["provider"]
 
 	out := make(map[string]map[string]*PriceTerminal)

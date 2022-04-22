@@ -10,6 +10,7 @@ func ExpressionExecutor(price *PriceTerminal) {
 		var B *PriceTerminal
 		var O *PriceTerminal
 
+
 		if _, ok := App.Prices[price.Provider]; !ok {
 			continue
 		}

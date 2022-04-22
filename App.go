@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+
 type Application struct {
 	LockerTerminals sync.RWMutex
 	LockerPrices    sync.RWMutex

@@ -11,6 +11,7 @@ func NewManager(container *Container) *Manager {
 		level:     make(chan *Level, 10000),
 	}
 
+
 	return manager
 }
 

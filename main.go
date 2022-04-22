@@ -20,6 +20,7 @@ type Worker struct {
 	stop      chan struct{}
 }
 
+
 func (w *Worker) Run() {
 	log.Printf("Worker %v start.\n", w.id)
 

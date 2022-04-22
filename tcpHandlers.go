@@ -17,6 +17,7 @@ func onMessage(client *TCP.Client, msg []byte) {
 		}
 	}()
 
+
 	//timeStart := time.Now()
 
 	//log.Printf("Income Message: %s", msg)
@@ -64,6 +65,7 @@ func onMessage(client *TCP.Client, msg []byte) {
 							continue
 						}
 
+
 						price.Close = v
 
 					case "percent":
@@ -86,6 +88,7 @@ func onMessage(client *TCP.Client, msg []byte) {
 
 						price.Go = v
 
+
 					case "open":
 						v, err := strconv.ParseFloat(bS, 64)
 
@@ -95,6 +98,7 @@ func onMessage(client *TCP.Client, msg []byte) {
 						}
 
 						price.Open = v
+
 
 					case "high":
 						v, err := strconv.ParseFloat(bS, 64)

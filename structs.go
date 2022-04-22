@@ -22,6 +22,7 @@ type Price struct {
 	Provider  string
 }
 
+
 type PriceTerminal struct {
 	SecCode   string  `json:"seccode"`
 	DateTime  int64   `json:"datetime"`

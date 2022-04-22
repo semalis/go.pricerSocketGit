@@ -17,6 +17,7 @@ import (
 	"github.com/blacked/go-zabbix"
 )
 
+
 func NewContainer() *Container {
 	c := &Container{
 		PricesOrder: []string{"LK;", "LKJHl", "LKJHl", "LJKH", "LUHKj", "OIUHGLK", "LKJBkm", "KJHk", "LJHB"},
