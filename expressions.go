@@ -10,7 +10,6 @@ func ExpressionExecutor(price *PriceTerminal) {
 		var B *PriceTerminal
 		var O *PriceTerminal
 
-
 		if _, ok := App.Prices[price.Provider]; !ok {
 			continue
 		}
@@ -57,7 +56,6 @@ func ExpressionExecutor(price *PriceTerminal) {
 			App.Prices[price.Provider][O.SecCode] = O
 		}
 	}
-
 
 	App.LockerPrices.Unlock()
 	App.LockerMath.Unlock()
